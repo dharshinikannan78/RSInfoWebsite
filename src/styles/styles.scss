@@ -6,9 +6,10 @@
 body {
   background: #fff;
   color: #666666;
-  font-family:"poppins", sans-serif;
+  font-family: "poppins", sans-serif;
   line-height: 1.5;
-  font-size: 23px;
+  font-size: 0.875rem !important;
+  text-rendering: optimizeLegibility;
 }
 
 a {
@@ -35,7 +36,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif;
+
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -55,4 +56,15 @@ h6 {
 
 .padding-none {
   padding: 0 !important;
+}
+
+.ls-05 {
+  letter-spacing: 0.5px;
+}
+
+.text-gray-50 {
+  color: #6D6E8D;
+}
+.text-primary-400 {
+  color: #000DFF;
 }

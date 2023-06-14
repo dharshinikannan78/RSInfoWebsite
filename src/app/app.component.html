@@ -63,181 +63,71 @@
   </div>
 </section>
 
+<section class="about pt-0 mt-5" id="about ">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <img src="../assets/img/about.svg" class="h-100 w-100" alt="">
+      </div>
+      <div class="col-md-5">
+        <p class="section-title-small">about us</p>
+        <h1 class="fw-bold display-5 lh mb-3"
+          style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+          Create,<br />
+          Enhance and Sustain</h1>
+        <p class="text-gray-50">
+          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind
+          texts. Separated they live in Bookmarksgrove right at the coast
+        </p>
+        <p class="text-gray-50">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ex. Corporis nobis cupiditate quasi, numquam
+          laudantium quia laboriosam? Dolorem error inventore eius facere ipsum tenetur, eaque quos numquam sequi
+          reiciendis!
+        </p>
+        <div class="aboutInfo mt-4">
+          <p><span class="me-2"><i class="fa-solid fa-check text-primary-400 fs-6 lh"></i></span> There live the blind
+            texts</p>
+          <p><span class="me-2"><i class="fa-solid fa-check text-primary-400 fs-6 lh"></i></span> Far far away behind
+            the word</p>
+          <p><span class="me-2"><i class="fa-solid fa-check text-primary-400 fs-6 lh"></i></span> Their place and
+            supplies</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <section id="services" class="services">
-  <div class="container-fluid">
-    <h2 class="secTitle text-center mb-2">Our Services</h2>
-    <div class="row row-cols-1 row-cols-md-3 g-5 mt-2">
-      <div class="col" data-aos="fade-up" data-aos-delay="100">
-        <div class="card h-100">
-          <div class="iconBox">
-            <div class="iconRound">
-              <h4>1</h4>
-            </div>
-          </div>
+  <div class="container">
+    <div class="section-header text-center">
+      <h1 class="section-title fw-bold mb-3">Our Services</h1>
+      <p class="section-brief w-75 mx-auto">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quaerat fugit architecto tempora asperiores
+        temporibus voluptas.
+      </p>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-3 mt-2">
+      <div class="col-4" *ngFor="let item of serviceData">
+        <div class="card border-0 h-100">
           <div class="card-body">
-            <h5 class="card-title">Data Annotation</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col" data-aos="fade-up" data-aos-delay="100">
-        <div class="card h-100">
-          <div class="iconBox">
-            <div class="iconRound">
-              <h4>2</h4>
+            <div class="serviceIcon ">
+              <span class="d-flex align-items-center justify-content-center">
+                <img [src]="'../assets/img/' + item.src" alt="">
+              </span>
             </div>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Accessibility Service</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col" data-aos="fade-up" data-aos-delay="100">
-        <div class="card h-100">
-          <div class="iconBox">
-            <div class="iconRound">
-              <h4>3</h4>
-            </div>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Typesetting</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col" data-aos="fade-up" data-aos-delay="200">
-        <div class="card h-100">
-          <div class="iconBox">
-            <div class="iconRound">
-              <h4>4</h4>
-            </div>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Artwork & Graphics</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col" data-aos="fade-up" data-aos-delay="200">
-        <div class="card h-100">
-          <div class="iconBox">
-            <div class="iconRound">
-              <h4>5</h4>
-            </div>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Project Management</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col" data-aos="fade-up" data-aos-delay="300">
-        <div class="card h-100">
-          <div class="iconBox">
-            <div class="iconRound">
-              <h4>6</h4>
-            </div>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">E-Books</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col" data-aos="fade-up" data-aos-delay="300">
-        <div class="card h-100">
-          <div class="iconBox">
-            <div class="iconRound">
-              <h4>7</h4>
-            </div>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Prepress</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col" data-aos="fade-up" data-aos-delay="300">
-        <div class="card h-100">
-          <div class="iconBox">
-            <div class="iconRound">
-              <h4>8</h4>
-            </div>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Conversion (XML/HTML)</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col" data-aos="fade-up" data-aos-delay="300">
-        <div class="card h-100">
-          <div class="iconBox">
-            <div class="iconRound">
-              <h4>9</h4>
-            </div>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Data Labeling</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col" data-aos="fade-up" data-aos-delay="300">
-        <div class="card h-100">
-          <div class="iconBox">
-            <div class="iconRound">
-              <h4>10</h4>
-            </div>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Website Development</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col" data-aos="fade-up" data-aos-delay="300">
-        <div class="card h-100">
-          <div class="iconBox">
-            <div class="iconRound">
-              <h4>11</h4>
-            </div>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Web Application Development</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col" data-aos="fade-up" data-aos-delay="300">
-        <div class="card h-100">
-          <div class="iconBox">
-            <div class="iconRound">
-              <h4>12</h4>
-            </div>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Custom Software Application</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col" data-aos="fade-up" data-aos-delay="300">
-        <div class="card h-100">
-          <div class="iconBox">
-            <div class="iconRound">
-              <h4>13</h4>
-            </div>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Mobile App Development</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col" data-aos="fade-up" data-aos-delay="300">
-        <div class="card h-100">
-          <div class="iconBox">
-            <div class="iconRound">
-              <h4>14</h4>
-            </div>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Copy Editing</h5>
+            <h5 class="card-title primary-text-color ls-05 fw-bold">{{ item.name }}</h5>
+            <p class="text-gray-50">{{ item.content }}</p>
+            <button type="button" class="btn moreBtn mt-2">Browse More</button>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+
+
 <section id="contact">
   <div class="container-fluid">
     <div class="section-header">
