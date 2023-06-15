@@ -1,7 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import * as AOS from 'aos';
 import jump from 'jump.js';
-import * as $ from 'jquery';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +13,7 @@ export class AppComponent implements OnInit {
   windowScrolled: boolean = false;
   serviceData: any;
   items: any
+  ngOnInit(): void { }
   constructor() {
     AOS.init({ duration: 1000 });
 
@@ -38,9 +38,18 @@ export class AppComponent implements OnInit {
 
 
   @HostListener('window:scroll', ['$event'])
-  ngOnInit(): void {
-
+  onWindowScroll = ($event: any) => {
+    const verticalOffset = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    if (verticalOffset > 50) {
+      document.getElementById("mainNav").classList.add('navbar-shrink');
+      this.windowScrolled = true;
+    } else if (this.windowScrolled && verticalOffset < 10) {
+      this.windowScrolled = false;
+      document.getElementById("mainNav").classList.remove('navbar-shrink');
+    }
   }
+
+
   scrollToTarget = (target: string) => {
     const menuButtonElement = document.getElementById("menu-button");
     menuButtonElement.setAttribute("aria-expanded", "false");

@@ -8,7 +8,8 @@
 
 # dependencies
 /node_modules
-
+/dist
+/backup
 # profiling files
 chrome-profiler-events*.json
 speed-measure-plugin*.json
@@ -43,3 +44,6 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+package-lock.json
+dist/website/index.html
+dist/website/index.html

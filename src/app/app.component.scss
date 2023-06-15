@@ -4,11 +4,27 @@ $primary-color: #000dff;
   background-color: transparent !important;
   overflow: hidden;
   transition: 0.5s all ease-in;
+  top: 20px;
+}
+
+.text-gray-50 {
+  color: #6D6E8D;
 }
 
 .navbar li a {
-  color: #fff;
-  font-weight: 600;
+  font-size: 13px;
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+  padding-left: 16px;
+  padding-right: 16px;
+  letter-spacing: 1px;
+  color: #000;
+  font-weight: 500;
+  text-transform: uppercase;
+  opacity: 1 !important;
+}
+.navbar li:hover a {
+  color: #000dff;
 }
 
 .navbar-brand {
@@ -32,15 +48,8 @@ $primary-color: #000dff;
 }
 
 .navbar-shrink {
-  background-color: #f8f9fa !important;
-
-  .nav-link {
-    color: #3330e4 !important;
-  }
-
-  .nav-link:hover {
-    color: #111111 !important;
-  }
+  background-color: #fff !important;
+  top: 0;
 }
 
 .cursorp {
@@ -100,7 +109,26 @@ $primary-color: #000dff;
 
 .welcome-area {
   position: relative;
-  z-index: 1;
+  height: 100vh;
+  background: url('../assets/img/pair\ programming\ \(4\).svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  margin-bottom: 6rem;
+
+}
+
+.getInTouch-btn {
+  color: #ffff;
+  background-color: #000dff;
+  border-radius: 24px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.landing-img {
+  min-height: 60vh;
 }
 
 .welcome-area .welcome-pattern {
@@ -121,9 +149,11 @@ $primary-color: #000dff;
   text-transform: uppercase;
   font-weight: 600;
 }
+
 #about {
-  padding: 4rem 0;
+  margin: 4rem 0;
 }
+
 #services {
   overflow: hidden;
   padding: 5rem 0;
@@ -214,6 +244,7 @@ h3 {
   color: #fff;
   transition: 0.3s;
 }
+
 .companyListingTitle {
   color: var(--N800);
   margin: 36px 0 24px;
@@ -223,6 +254,7 @@ h3 {
   font-weight: 900;
   line-height: 23px;
 }
+
 .expandedFilters {
   background-color: var(--N400, #e7e7f1);
   display: inline-block;
@@ -233,10 +265,12 @@ h3 {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 .expandedFilters .swiper-container {
   position: static;
   padding: 0 32px;
 }
+
 .swiper-container {
   margin-left: auto;
   margin-right: auto;
@@ -246,9 +280,11 @@ h3 {
   padding: 0;
   z-index: 1;
 }
+
 .expandedFilters .swiper-container .swiper-wrapper {
   padding: 24px 0;
 }
+
 .expandedFilters .swiper-container .swiper-wrapper .swiper-slide {
   border: 1px solid rgba(223, 226, 255, 0.5);
   border-radius: 16px;
@@ -269,6 +305,7 @@ h3 {
   -ms-flex-pack: center;
   justify-content: center;
 }
+
 .expandedFilters .swiper-container .swiper-wrapper .swiper-slide .sub-title {
   font-weight: 700;
   font-size: 14px;
