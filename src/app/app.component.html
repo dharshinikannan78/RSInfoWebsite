@@ -127,9 +127,34 @@
 </section>
 
 
+<section id="career" class="mb-3">
+  <div class="container">
+    <h1 class="companyListingTitle">List of Jobs</h1>
+    <section class="expandedFilters">
+      <div class="swiper-container">
+        <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+          <div class="swiper-slide filter" *ngFor="let item of items">
+            <div class="title semi-bold line-clamp-2">
+              {{item.name}}
+              <div class="sub-title">
+                <span class="ellipsis">Apply <i class="fa fa-angle-right ps-2" width="7px" height="11px"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+
+
+
+
+
+
 
 <section id="contact">
-  <div class="container-fluid">
+  <div class="container">
     <div class="section-header">
       <h3>Contact Us</h3>
     </div>

@@ -1,4 +1,4 @@
-$primary-color: #000DFF;
+$primary-color: #000dff;
 
 .navbar {
   background-color: transparent !important;
@@ -56,8 +56,6 @@ $primary-color: #000DFF;
     color: #111111 !important;
   }
 }
-
-
 
 .single-welcome-slide .welcome-text {
   position: relative;
@@ -145,22 +143,22 @@ $primary-color: #000DFF;
 }
 
 #services .card .moreBtn {
-  color: #000DFF;
+  color: #000dff;
   position: relative;
   left: -0.75rem;
   transition: all 0.3s ease-in;
 }
 
 .section-header .section-brief {
-  color: #6D6E8D;
+  color: #6d6e8d;
 }
 
 .section-title {
-  color: #00044A;
+  color: #00044a;
 }
 
 .primary-text-color {
-  color: #00044A;
+  color: #00044a;
 }
 
 .serviceIcon span {
@@ -215,4 +213,84 @@ h3 {
   padding: 8px 30px;
   color: #fff;
   transition: 0.3s;
+}
+.companyListingTitle {
+  color: var(--N800);
+  margin: 36px 0 24px;
+  max-height: 100px;
+  overflow: hidden;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 23px;
+}
+.expandedFilters {
+  background-color: var(--N400, #e7e7f1);
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  border-radius: 16px;
+  background-size: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.expandedFilters .swiper-container {
+  position: static;
+  padding: 0 32px;
+}
+.swiper-container {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+}
+.expandedFilters .swiper-container .swiper-wrapper {
+  padding: 24px 0;
+}
+.expandedFilters .swiper-container .swiper-wrapper .swiper-slide {
+  border: 1px solid rgba(223, 226, 255, 0.5);
+  border-radius: 16px;
+  margin-right: 20px;
+  height: 91px;
+  width: 600px !important;
+  background: white;
+  padding: 20px 24px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.expandedFilters .swiper-container .swiper-wrapper .swiper-slide .sub-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--P100, #275df5);
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 9px;
+  line-height: 20px;
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* z-index: 1; */
+  display: flex;
+  /* display: flex; */
+  -o-transition-property: transform;
+  transition-property: transform;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
 }

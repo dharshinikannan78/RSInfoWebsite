@@ -13,6 +13,7 @@ export class AppComponent implements OnInit {
   ariaExpanded: boolean = false;
   windowScrolled: boolean = false;
   serviceData: any;
+  items: any
   constructor() {
     AOS.init({ duration: 1000 });
 
@@ -27,8 +28,15 @@ export class AppComponent implements OnInit {
       { name: "Mobile App Development", src: "top-cat5.svg", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ea dolor quaerat" },
       { name: "E-Books", src: "top-cat1.svg", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ea dolor quaerat" },
     ]
+    this.items = [
+      { name: "Data Annotation & Labeling Service" },
+      { name: "Digital Publishing" },
+      { name: "Accessibility Service" },
 
+    ]
   }
+
+
   @HostListener('window:scroll', ['$event'])
   ngOnInit(): void {
 
