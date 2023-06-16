@@ -1,7 +1,7 @@
 <section class="nav_bar">
   <nav class="navbar fixed-top navbar-expand-md bg-dark" [class.navbar-shrink]="windowScrolled" id="mainNav">
-    <div class="container-fluid">
-      <a class="px-3 navbar-brand text-white cursorp" (click)="scrollToTarget('.landingPage')"><img
+    <div class="container">
+      <a class="pe-3 navbar-brand text-white cursorp" (click)="scrollToTarget('.landingPage')"><img
           src="../assets/logo/Logo.png" width="135px" class="h-100" alt=""></a>
       <button class="navbar-toggler" id="menu-button" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -22,13 +22,7 @@
             <a class="nav-link cursorp" (click)="scrollToTarget('.services')">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link cursorp" (click)="scrollToTarget('.training')">Training</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link cursorp" (click)="scrollToTarget('.recruit')">Recruitment</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link cursorp" (click)="scrollToTarget('.products')">Products</a>
+            <a class="nav-link cursorp" (click)="scrollToTarget('.Career')">Career</a>
           </li>
           <li class="nav-item">
             <a class="nav-link cursorp" (click)="scrollToTarget('.contact')">Contact</a>
@@ -38,7 +32,6 @@
     </div>
   </nav>
 </section>
-<header class="header-area"></header>
 
 <section id="welcome-area" class="welcome-area align-center">
   <div class="container">
@@ -48,14 +41,13 @@
         <h1 class="display-5 mb-4"
           style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-weight: 900;">
           Design,<br /> Development, Delivery</h1>
-        <p class="text-gray-50">Far far away, behind the word mountains,<br/> far from the countries Vokalia and Consonantia,
+        <p class="text-gray-50">Far far away, behind the word mountains,<br /> far from the countries Vokalia and
+          Consonantia,
           there live the blind
           texts.</p>
         <button type="button" class="btn getInTouch-btn mt-3">Get in touch</button>
       </div>
     </div>
-  </div>
-  <div class="welcome-thumbnail">
   </div>
 </section>
 
@@ -123,10 +115,26 @@
 </section>
 
 
-<section id="career" class="mb-3">
+<section id="career" class="Career pb-5 mb-4">
   <div class="container">
     <h1 class="companyListingTitle">List of Jobs</h1>
-    <section class="expandedFilters">
+    <div class="expandedFilters">
+      <div class="row row-cols-1 row-cols-md-3 g-3">
+        <div class="col" *ngFor="let item of items">
+          <div class="card shadow-sm border-0 h-100 rounded-3">
+            <div class="card-body pb-3">
+              <h6 class="card-subtitle text-body-secondary">{{item.name}}</h6>
+            </div>
+            <div class="card-footer bg-white border-0 pt-0">
+              <span class="text-primary-400 fw-bold">Apply <i class="fa fa-angle-right ps-2"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- <section class="expandedFilters">
       <div class="swiper-container">
         <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
           <div class="swiper-slide filter" *ngFor="let item of items">
@@ -139,7 +147,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
   </div>
 </section>
 
@@ -149,7 +157,7 @@
 
 
 
-<section id="contact">
+<!-- <section id="contact">
   <div class="container">
     <div class="section-header">
       <h3>Contact Us</h3>
@@ -212,4 +220,48 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
+
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="row g-5 justify-content-between">
+      <div class="col-md-4">
+        <h2>Rs infosolution</h2>
+        <p class="text-gray-50">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quibusdam repudiandae distinctio voluptatibus
+          non accusamus voluptate, libero facilis similique. Quo rerum distinctio totam saepe debitis.
+        </p>
+        <div class="socialLinks d-flex align-items-center mt-4 pt-2">
+          <a href="#" class="socialLinks-item ms-0">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="#" class="socialLinks-item">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" class="socialLinks-item">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+      <div class="offset-md-1 col-md-3">
+        <h5 class="fw-bold">Useful Links</h5>
+        <ul>
+          <li>About</li>
+          <li>Service</li>
+          <li>Carrer</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5 class="fw-bold">Contact Info</h5>
+        <address>
+          Sri Maha Ganesh Flat,<br />
+          No.18/1 Aruna nagar North Extension,<br />
+          Karaikudi
+        </address>
+        <p>9840401336</p>
+        <p>info@infosolution.in</p>
+      </div>
+    </div>
+  </div>
+</footer>

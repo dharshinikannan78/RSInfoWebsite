@@ -31,8 +31,7 @@ export class AppComponent implements OnInit {
     this.items = [
       { name: "Data Annotation & Labeling Service" },
       { name: "Digital Publishing" },
-      { name: "Accessibility Service" },
-
+      { name: "Accessibility Service" }
     ]
   }
 
