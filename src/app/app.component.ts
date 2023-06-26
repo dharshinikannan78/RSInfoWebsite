@@ -18,21 +18,20 @@ export class AppComponent implements OnInit {
     AOS.init({ duration: 1000 });
 
     this.serviceData = [
-      { name: "Data Annotation", src: "top-cat3.svg", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ea dolor quaerat" },
-      { name: "Accessibility Service", src: "top-cat2.svg", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ea dolor quaerat" },
-      { name: "Typesetting", src: "top-cat1.svg", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ea dolor quaerat" },
-      { name: "Digital Publishing", src: "top-cat4.svg", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ea dolor quaerat" },
-      { name: "Data Labeling", src: "top-cat5.svg", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ea dolor quaerat" },
-      { name: "Website Development", src: "top-cat6.svg", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ea dolor quaerat" },
-      { name: "Web Application Development", src: "top-cat2.svg", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ea dolor quaerat" },
-      { name: "Mobile App Development", src: "top-cat5.svg", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ea dolor quaerat" },
-      { name: "E-Books", src: "top-cat1.svg", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ea dolor quaerat" },
+      { no: 1, name: "Data Annotation & Labeling", src: "top-cat3.svg", content: "Data annotation refers to the process of labeling or tagging data with relevant information or annotations. It is a crucial step in machine learning and artificial intelligence projects, as it helps train and improve models by providing labeled examples for the algorithms to learn from." },
+      { no: 2, name: "Digital Publishing", src: "top-cat4.svg", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ea dolor quaerat" },
+      { no: 3, name: "Accessibility Service", src: "top-cat2.svg", content: "An accessible PDF is a document that is universally easy to use and meets established accessibility standards. It enables most people to view, read, or interact with your document. We have immense experience in Accessibility PDF. We mainly specialize in Accessibility PDF/UA, Section 508, ADA, AODA." },
+      // { name: "Typesetting", src: "top-cat1.svg", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ea dolor quaerat" },
+      // { name: "Data Labeling", src: "top-cat5.svg", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ea dolor quaerat" },
+      // { name: "Website Development", src: "top-cat6.svg", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ea dolor quaerat" },
+      // { name: "Web Application Development", src: "top-cat2.svg", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ea dolor quaerat" },
+      // { name: "Mobile App Development", src: "top-cat5.svg", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ea dolor quaerat" },
+      // { name: "E-Books", src: "top-cat1.svg", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ea dolor quaerat" },
     ]
-    this.items = [
-      { name: "Data Annotation & Labeling Service" },
-      { name: "Digital Publishing" },
-      { name: "Accessibility Service" }
-    ]
+    this.items = [{ name: "Data Annotation & Labeling" },
+    { name: "Digital Publishing" },
+    { name: "Accessibility Service" }]
+
   }
 
 
