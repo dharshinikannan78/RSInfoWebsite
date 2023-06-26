@@ -96,7 +96,7 @@
       </p>
     </div>
     <div class="row row-cols-1 row-cols-md-3 g-3 mt-2">
-      <div class="col" *ngFor="let item of serviceData">
+      <div class="col" *ngFor="let item of serviceData , let i = index ">
         <div class="card border-0 h-100">
           <div class="card-body">
             <div class="serviceIcon ">
@@ -106,13 +106,37 @@
             </div>
             <h5 class="card-title primary-text-color ls-05 fw-bold">{{ item.name }}</h5>
             <p class="text-gray-50">{{ item.content }}</p>
-            <button type="button" class="btn moreBtn mt-2">Browse More</button>
+            <button type="button" class="btn moreBtn mt-2" data-bs-toggle="modal"
+              attr.data-bs-target="#exampleModal{{item.no}}" attr.aria-controls="exampleModal{{i}}">Browse
+              More</button>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModal{{item.no}}" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <img [src]="'../assets/img/' + item.src" alt="">
+                <h5 class="modal-title" id="exampleModalLabel"> {{ item.name}}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                ..
+              </div>
+              <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div> -->
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+
 </section>
+
+
 
 
 <section id="career" class="Career pb-5 mb-4">
@@ -148,16 +172,10 @@
         </div>
       </div>
     </section> -->
+
   </div>
 </section>
-
-
-
-
-
-
-
-<!-- <section id="contact">
+<section id="contact">
   <div class="container">
     <div class="section-header">
       <h3>Contact Us</h3>
@@ -213,14 +231,12 @@
           </div>
           <div class="text-center">
             <button type="submit" class="btn btn-primary submitButton">Send Message</button>
-
           </div>
-
         </form>
       </div>
     </div>
   </div>
-</section> -->
+</section>
 
 <footer class="footer" id="footer">
   <div class="container">
